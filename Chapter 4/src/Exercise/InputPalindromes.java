@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class InputPalindromes {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-        System.out.println("Enter a five digit number");
+		System.out.println("Enter a five digit number");
 		int number = input.nextInt(), reversedInput = 0, remainder, originalInput;
 		originalInput = number;
   		if(number < 100000 && number >= 10000) {
@@ -20,12 +20,12 @@ public class InputPalindromes {
 		}
          else {
         	 System.out.println("Please Enter a five digit  number");
-        	 number = input.nextInt();
-        	 if(number < 100000 && number >= 10000) {
-     			while(number != 0 ) {
-     				remainder = number % 10;
+        	 int number2 = input.nextInt();
+        	 if(number2 < 100000 && number2 >= 10000) {
+     			while(number2 != 0 ) {
+     				remainder = number2 % 10;
      				reversedInput = reversedInput * 10 + remainder;
-     				number  /= 10;
+     				number2  /= 10;
      				
      				}
      				if(originalInput == reversedInput){
