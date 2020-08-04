@@ -1,4 +1,5 @@
-package payRollModification;
+package com.chapter10;
+
 
 public class CommissionEmployee extends Employee {
 	private double commissionRate;
@@ -8,7 +9,7 @@ public class CommissionEmployee extends Employee {
 		
 	}
 	
-	public CommissionEmployee(double commissionRate,double grossSales,String firstName,String lastName,int securityNumber,int birthdate) {
+	public CommissionEmployee(double commissionRate,double grossSales,String firstName,String lastName,int securityNumber,Date birthdate) {
 		super(firstName,lastName,securityNumber,birthdate);
 		if(commissionRate > 0.0 && commissionRate < 1.0) {
 			this.commissionRate = commissionRate;
@@ -45,7 +46,7 @@ public class CommissionEmployee extends Employee {
 				System.out.println("Gross sales must be greater than 0.0");
 			}	
 		 }
-	public double earnings() {
+	public double getPayment() {
 		double wage = commissionRate * grossSales;
 		return wage;
 	}

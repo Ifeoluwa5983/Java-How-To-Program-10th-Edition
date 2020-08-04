@@ -4,8 +4,8 @@ public class SalariedEmployee extends Employee {
 	
 	private double weeklySalary;
 	
-	public SalariedEmployee(String firstName,String lastName,int securityNumber,int birthdate,double weeklySalary) {
-		super (firstName,lastName,securityNumber,birthdate);
+	public SalariedEmployee(String firstName,String lastName,int securityNumber,double weeklySalary,CompensationModel compel) {
+		super (firstName,lastName,securityNumber,compel);
 		
 		if(weeklySalary > 0.0) {
 			this.weeklySalary = weeklySalary;

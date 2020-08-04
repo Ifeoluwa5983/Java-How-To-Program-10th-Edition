@@ -4,27 +4,27 @@ public abstract class Employee {
 	private String firstName;
 	private String  lastName;
 	private int securityNumber;
-	private int birthdate;
+	private CompensationModel compel;
 	
 	
-	public Employee(String firstName,String lastName,int securityNumber,int birthdate) {
+	public Employee(String firstName,String lastName,int securityNumber,CompensationModel compel) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.securityNumber = securityNumber;
-		this.birthdate = birthdate;
+		this.compel = compel;
 	}
 
 	public Employee () {
 		
 	}
+	//public abstract  double getEarnings();
 
-	public int getBirthdate() {
-		return birthdate;
+	public CompensationModel getCompel() {
+		return compel;
 	}
 
-
-	public void setBirthdate(int birthdate) {
-		this.birthdate = birthdate;
+	public void setCompel(CompensationModel compel) {
+		this.compel = compel;
 	}
 
 

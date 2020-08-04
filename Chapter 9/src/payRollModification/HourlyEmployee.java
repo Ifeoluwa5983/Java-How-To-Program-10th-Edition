@@ -5,8 +5,8 @@ public class HourlyEmployee extends Employee{
 	private int hour;
 	
 	
-	public HourlyEmployee(String firstName,String lastName,int securityNumber,int birthdate,double hourlyWage,int hour) {
-		super(firstName,lastName,securityNumber,birthdate);
+	public HourlyEmployee(String firstName,String lastName,int securityNumber,double hourlyWage,int hour,CompensationModel compel) {
+		super(firstName,lastName,securityNumber,compel);
 		if(hourlyWage > 0.0) {
 			this.hourlyWage = hourlyWage;
 		}else {
