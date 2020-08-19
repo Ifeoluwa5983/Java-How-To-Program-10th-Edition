@@ -1,4 +1,4 @@
-package com.randomSentences;
+package test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -7,13 +7,15 @@ import java.util.Random;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import com.reversed.ReversedWords;
+
 class RandomSentenceTest {
 
 	@BeforeEach
 	void setUp() throws Exception {
 	}
 
-	@Test
+	/**@Test
 	void test() {
 		String[] article = {"the","a","one","some","any"};
 		String[] noun = {"boy","girl","dog","town","car"};
@@ -32,6 +34,11 @@ class RandomSentenceTest {
 					noun[random.nextInt(noun.length)]);
 		}
 		
+	}**/
+	@Test
+	void reversedWords() {
+		ReversedWords rw = new ReversedWords();
+		rw.reveseWord();
 	}
 
 }
